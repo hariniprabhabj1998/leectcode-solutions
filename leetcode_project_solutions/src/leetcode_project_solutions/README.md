@@ -1,1 +1,3 @@
-# leectcode-solutions
+There are three approch
+
+Brute force
