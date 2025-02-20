@@ -1,3 +1,3 @@
-There are three approch
+#There are three approch
 
-Brute force
+#Brute force
