@@ -12,7 +12,13 @@ public class VerifyAnAlienDictionary {
 		System.out.println(dict.isAlienSorted(word, o));
 
 	}
-//O(C), where C is the total number of characters across all words.
+
+	/*
+	 * The outer loop runs O(N - 1) ≈ O(N), where N is the number of words. The
+	 * inner loop runs up to O(L), where L is the length of the longest word. In the
+	 * worst case, it compares all characters in all words, so O(C), where C is the
+	 * total number of characters in words.
+	 */
 	public boolean isAlienSorted(String[] words, String order) {
 
 		Map<Character, Integer> orderMap = new HashMap<>();
