@@ -52,3 +52,17 @@ public class FirstLastPositionOfSortedArray {
 		return bound;
 	}
 }
+
+/*
+ * Approach:
+
+Use Binary Search Twice – First to find the first occurrence of target, then to find the last occurrence.
+Finding First Occurrence –
+Use binary search: If nums[mid] == target, store mid and search left (right = mid - 1).
+If nums[mid] < target, move right (left = mid + 1), else move left.
+Finding Last Occurrence –
+If nums[mid] == target, store mid and search right (left = mid + 1).
+If nums[mid] > target, move left (right = mid - 1), else move right.
+Return [first, last] indices. If not found, return [-1, -1].
+Time Complexity: O(log n), as we perform two binary searches.
+*/
